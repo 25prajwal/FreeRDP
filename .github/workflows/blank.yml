@@ -25,6 +25,7 @@ jobs:
           if [[ ${{ github.event.inputs.os }} == "1" || ${{ github.event.inputs.os }} == "window" ]]
           then 
           os="Windows"
+          echo "heelo"
           elif [[ ${{ github.event.inputs.os }} == "2" || ${{ github.event.inputs.os }} == "ubuntu" ||  ${{ github.event.inputs.os }} == "Linux" ]]
           then 
           os="ubuntu"
