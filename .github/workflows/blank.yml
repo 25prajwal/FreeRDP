@@ -1,0 +1,19 @@
+name: Main
+on:
+  workflow_dispatch:
+    input:
+      OS:
+        description: 'Choose OS(Enter number.) \n 1=> Windows \n 2=> ubuntu(Linux) 3=> MacOs(Apple)'     
+        required: true
+        default: '1'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: 
+        run: echo Hello, world!
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
