@@ -5,7 +5,6 @@ on:
       OS:
         description: 'Choose OS(Enter number.) \n 1=> Windows \n 2=> ubuntu(Linux) 3=> MacOs(Apple)'     
         required: true
-        default: '1'
 jobs:
   build:
     runs-on: ubuntu-latest
