@@ -1,7 +1,7 @@
 name: Main
 on:
   workflow_dispatch:
-    input:
+    inputs:
       prajwal:
         description: 'Choose OS(Enter number.) \n 1=> Windows \n 2=> ubuntu(Linux) 3=> MacOs(Apple)'     
         required: true
