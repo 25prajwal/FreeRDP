@@ -19,6 +19,11 @@ jobs:
       - name: Welcome  ${{ github.event.inputs.os }}
         run: |
           echo Hello, world!
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project. $os
+          echo "Env: ${{os }}"
           if[[${{ github.event.inputs.os }}=="1"||${{ github.event.inputs.os }} =="window"]]
           then 
           os="Windows"
@@ -31,12 +36,6 @@ jobs:
           else
           echo "invaild Type"
           fi
-
-
-
-
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project. $os
           echo "Env: ${{os }}"
+
+
