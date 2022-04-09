@@ -17,8 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Welcome  ${{ github.event.inputs.os }}
-        run: |
-          echo Hello, world!
+        run: echo Hello, world!
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
