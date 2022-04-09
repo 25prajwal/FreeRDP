@@ -2,10 +2,10 @@ name: Main
 on:
   workflow_dispatch:
     inputs:
-      prajwal:
+      os:
         description: >-
-         Choose OS(Enter number.) 
-            1=> Windows \n 
+         Choose OS(Enter number.)              .
+            1=> Windows 
             2=> ubuntu(Linux) 
             3=> MacOs(Apple)
             
@@ -16,10 +16,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: 
+      - name: Welcome
         run: echo Hello, world!
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo "Env: ${{ github.event.inputs.prajwal }}"
+          echo "Env: ${{ github.event.inputs.os }}"
