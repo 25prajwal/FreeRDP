@@ -21,20 +21,8 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
-          echo test, and deploy your project. $os
+          echo test, and deploy your project.
           echo "Env: ${{os }}"
-          if[[${{ github.event.inputs.os }}=="1"||${{ github.event.inputs.os }} =="window"]]
-          then 
-          os="Windows"
-          elif[[${{ github.event.inputs.os }}=="2"||${{ github.event.inputs.os }} =="ubuntu" || ${{ github.event.inputs.os }}=="linux"]]
-          then 
-          os="ubuntu"
-          elif[[${{ github.event.inputs.os }}=="3"||${{ github.event.inputs.os }} =="macos" || ${{ github.event.inputs.os }}=="apple"]]
-          then 
-          os="macos"
-          else
-          echo "invaild Type"
-          fi
           echo "Env: ${{os }}"
 
 
