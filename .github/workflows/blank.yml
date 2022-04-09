@@ -2,7 +2,7 @@ name: Main
 on:
   workflow_dispatch:
     input:
-      OS:
+      prajwal:
         description: 'Choose OS(Enter number.) \n 1=> Windows \n 2=> ubuntu(Linux) 3=> MacOs(Apple)'     
         required: true
 jobs:
@@ -16,4 +16,4 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo "Env: ${{ github.event.inputs.OS }}"
+          echo "Env: ${{ github.event.inputs.prajwal }}"
