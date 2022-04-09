@@ -26,4 +26,5 @@ jobs:
           then 
           os="Windows"
           fi
+          echo you chose => $os
 
