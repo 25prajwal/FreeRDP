@@ -24,7 +24,7 @@ jobs:
           echo test, and deploy your project.
           if [[ ${{ github.event.inputs.os }} == "1" || ${{ github.event.inputs.os }} == "window" ]]
           then 
-          os = "Windows"
+          os="Windows"
           fi
           echo you chose => $os
 
