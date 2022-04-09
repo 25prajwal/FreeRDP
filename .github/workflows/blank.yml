@@ -22,5 +22,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-
+          if[[${{ github.event.inputs.os }}=="1"||${{ github.event.inputs.os }} =="window"]]
+          then 
+          os="Windows"
+          fi
 
