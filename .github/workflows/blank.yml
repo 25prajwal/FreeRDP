@@ -25,10 +25,10 @@ jobs:
           if [[ ${{ github.event.inputs.os }} == "1" || ${{ github.event.inputs.os }} == "window" ]]
           then 
           os = "Windows"
-          if [[ ${{ github.event.inputs.os }} == "2" || ${{ github.event.inputs.os }} == "ubuntu" ||  ${{ github.event.inputs.os }} == "Linux" ]]
+          elif [[ ${{ github.event.inputs.os }} == "2" || ${{ github.event.inputs.os }} == "ubuntu" ||  ${{ github.event.inputs.os }} == "Linux" ]]
           then 
           os="ubuntu"
-          if [[ ${{ github.event.inputs.os }} == "3" || ${{ github.event.inputs.os }} == "macos" ||  ${{ github.event.inputs.os }} == "apple"]]
+          elif [[ ${{ github.event.inputs.os }} == "3" || ${{ github.event.inputs.os }} == "macos" ||  ${{ github.event.inputs.os }} == "apple"]]
           then 
           os = "Macos" 
           else
