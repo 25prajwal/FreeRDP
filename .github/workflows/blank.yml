@@ -29,9 +29,6 @@ jobs:
           elif [[ ${{ github.event.inputs.os }} == "2" || ${{ github.event.inputs.os }} == "ubuntu" ||  ${{ github.event.inputs.os }} == "Linux" ]]
           then 
           os="ubuntu"
-          elif [[ ${{ github.event.inputs.os }} == "3" || ${{ github.event.inputs.os }} == "macos" ||  ${{ github.event.inputs.os }} == "apple"]]
-          then 
-          os="Macos" 
           else
           echo "Invaild Input User From User"
           os="None"
