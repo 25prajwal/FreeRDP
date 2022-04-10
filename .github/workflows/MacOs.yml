@@ -20,3 +20,5 @@ jobs:
       run: source macos.sh "$MAC_USER_PASSWORD" "$VNC_PASSWORD" "$NGROK_AUTH_TOKEN" "$MAC_REALNAME"
     - name: Connecting MacOS with Ngrok to VNC Server
       run: source IP.sh
+    - name: MacOS System running...
+      uses: mxschmitt/action-tmate@v2
