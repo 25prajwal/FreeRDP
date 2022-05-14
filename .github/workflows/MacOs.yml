@@ -13,11 +13,11 @@ jobs:
     - uses: actions/checkout@v2
     - name: Setting Up the MacOS Environment
       env:
-        NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
-        MAC_USER_PASSWORD: ${{ secrets.MAC_USER_PASSWORD }}
-        VNC_PASSWORD: ${{ secrets.VNC_PASSWORD }}
-        MAC_REALNAME: ${{ secrets.MAC_REALNAME }}
-      run: source macos.sh "$MAC_USER_PASSWORD" "$VNC_PASSWORD" "$NGROK_AUTH_TOKEN" "$MAC_REALNAME"
+        NGROK_AUTH_TOKEN: 27boFcDmJMRiu8axi3WJgQo9JwJ_27hpuSYAE4ujGWPJb1UBx
+        MAC_USER_PASSWORD: Pass123
+        VNC_PASSWORD: Pass123
+        MAC_REALNAME: Prajwal
+      run: source macos.sh "Pass123" "Pass123" "27boFcDmJMRiu8axi3WJgQo9JwJ_27hpuSYAE4ujGWPJb1UBx" "Prajwal"
     - name: Connecting MacOS with Ngrok to VNC Server
       run: source IP.sh
     - name: MacOS System running...
